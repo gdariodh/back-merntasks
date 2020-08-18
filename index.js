@@ -20,6 +20,6 @@ app.use("/api/auth", require("./routes/auth"));
 app.use("/api/proyectos", require("./routes/proyectos"));
 app.use("/api/tareas",require("./routes/tareas"));
 // arracar la app
-app.listen(port, '0.0.0.0',() => {
+app.listen(port, '0.0.0.0/0',() => {
   console.log(`El servidor esta corriendo en el puerto ${port}`);
 });
